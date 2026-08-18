@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniSpace - Furniture Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="home">
+    <nav>
+        <div class="logo">FurniSpace</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="cart-btn" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+            </li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <span class="tag">PREMIUM FURNITURE STORE</span>
+            <h1>Make Your Home Beautiful & Comfortable</h1>
+            <p>Discover stylish and comfortable furniture designed to make every space feel special. Explore our collection and find pieces that perfectly match your home.</p>
+            <a href="#products" class="btn">Explore Furniture</a>
+        </div>
+        <div class="hero-image">
+            <img src="image/Page design.jpg" alt="Furniture interior">
+        </div>
+    </div>
+</header>
+<section class="search-section">
+    <h2>Find Your Perfect Furniture</h2>
+    <p>Search from hundreds of styles, brands and choices.</p>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search sofa, chair, table, bed..." onkeyup="searchProducts()">
+        <button onclick="searchProducts()">🔍 Search</button>
+    </div>
+</section>
+<section id="products">
+    <h2>Popular Furniture</h2>
+    <p class="section-text">Choose from our best-selling furniture collection.</p>
+    <div class="category">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('sofa')">Sofas</button>
+        <button onclick="filterProducts('chair')">Chairs</button>
+        <button onclick="filterProducts('table')">Tables</button>
+        <button onclick="filterProducts('bed')">Beds</button>
+    </div>
+    <div class="products">
+        <div class="product" data-category="sofa" data-name="Modern Sofa">
+            <img src="image/Modernsofa.jpg" alt="Modern Sofa">
+            <h3>Modern Comfort Sofa</h3>
+            <p class="brand">Urban Living</p>
+            <p class="price">₹24,999</p>
+            <button onclick="addToCart('Modern Comfort Sofa',24999)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Modern Comfort Sofa',24999)">Buy Now</button>
+        </div>
+        <div class="product" data-category="storage" data-name="Modern Storage">
+        	<img src="image/storage tool.jpg" alt="Modern Storage Tool">
+            <h3>Modern Storage Tool</h3>
+            <p class="brand">Urban Living</p>
+            <p class="price">₹14,999</p>
+            <button onclick="addToCart('Modern Storage Tool',14999)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Modern Storage Tool',14999)">Buy Now</button>
+        </div>
+        <div class="product" data-category="sofa" data-name="Classic Sofa">
+            <img src="image/classic sofa.jpg" alt="Classic Sofa">
+            <h3>Classic Fabric Sofa</h3>
+            <p class="brand">Royal Furniture</p>
+            <p class="price">₹16,999</p>
+            <button onclick="addToCart('Classic Fabric Sofa',16999)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Classic Fabric Sofa',16999)">Buy Now</button>
+        </div>
+        <div class="product" data-category="chair" data-name="Luxury Chair">
+            <img src="image/chair.jpg" alt="Luxury Chair">
+            <h3>Luxury Lounge Chair</h3>
+            <p class="brand">HomeStyle</p>
+            <p class="price">₹15,499</p>
+            <button onclick="addToCart('Luxury Lounge Chair',15499)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Luxury Lounge Chair',15499)">Buy Now</button>
+        </div>
+        <div class="product" data-category="table" data-name="Wooden Table">
+            <img src="image/wooden table.jpg" alt="Wooden Table">
+            <h3>Premium Wooden Table</h3>
+            <p class="brand">WoodCraft</p>
+            <p class="price">₹7,999</p>
+            <button onclick="addToCart('Premium Wooden Table', 7999)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Premium Wooden Table', 7999)">Buy Now</button>
+        </div>
+        <div class="product" data-category="storage" data-name="Wardrobe">
+		    <img src="image/wardrobe.jpg" alt="Modern Wardrobe">
+		    <h3>Modern Wardrobe</h3>
+		    <p class="brand">HomeStyle</p>
+		    <p class="price">₹18,999</p>
+		    <button onclick="addToCart('Modern Wardrobe',18999)">Add to Cart</button>
+		    <button class="buy" onclick="buyNow('Modern Wardrobe',18999)">Buy Now</button>
+		</div>
+        <div class="product" data-category="bed" data-name="King Bed">
+            <img src="image/modern king bed.jpg" alt="King Bed">
+            <h3>Modern King Size Bed</h3>
+            <p class="brand">DreamHome</p>
+            <p class="price">₹29,999</p>
+            <button onclick="addToCart('Modern King Size Bed', 29999)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Modern King Size Bed', 29999)">Buy Now</button>
+        </div>
+        <div class="product" data-category="table" data-name="Study Table">
+            <img src="image/study table.jpg" alt="Study Table">
+		    <h3>Modern Study Table</h3>
+		    <p class="brand">WoodCraft</p>
+		    <p class="price">₹12,999</p>
+		    <button onclick="addToCart('Modern Study Table', 12999)">Add to Cart</button>
+		    <button class="buy" onclick="buyNow('Modern Study Table', 12999)">Buy Now</button>
+		</div>
+        <div class="product" data-category="chair" data-name="Office Chair">
+            <img src="image/office chair.jpg" alt="Office Chair">
+            <h3>Premium Office Chair</h3>
+            <p class="brand">WorkSpace</p>
+            <p class="price">₹9,999</p>
+            <button onclick="addToCart('Premium Office Chair',9999)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Premium Office Chair',9999)">Buy Now</button>
+        </div>
+    </div>
+</section>
+<section id="about" class="about">
+    <h2>Why Choose FurniSpace?</h2>
+    <div class="features">
+        <div class="feature">
+            <span>🏆</span>
+            <h3>Best Quality</h3>
+            <p>Premium quality furniture made for your comfort.</p>
+        </div>
+        <div class="feature">
+            <span>💰</span>
+            <h3>Best Prices</h3>
+            <p>Beautiful furniture at affordable prices.</p>
+        </div>
+        <div class="feature">
+            <span>🚚</span>
+            <h3>Fast Delivery</h3>
+            <p>Quick and safe delivery directly to your home.</p>
+        </div>
+        <div class="feature">
+            <span>🔒</span>
+            <h3>Secure Payment</h3>
+            <p>Safe and secure payment options for every order.</p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <h2>Build Your Dream Home</h2>
+    <p>Explore our collection and choose furniture you love.</p>
+    <a href="#products" class="btn">Shop Now</a>
+</section>
+<div id="cartModal" class="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closeCart()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <h3>Total: ₹<span id="cartTotal">0</span></h3>
+        <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+</div>
+<div id="loginModal" class="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closeLogin()">×</button>
+        <h2>Login / Create Account</h2>
+        <p>Enter your details to continue.</p>
+        <input type="text" id="username" placeholder="User Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="tel" id="phone" placeholder="Contact Number">
+        <button class="checkout-btn" onclick="loginUser()">Continue</button>
+    </div>
+</div>
+<div id="addressModal" class="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closeAddress()">×</button>
+        <h2>Delivery Address</h2>
+        <input type="text" id="address" placeholder="Full Address">
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="state" placeholder="State">
+        <input type="text" id="pincode" placeholder="PIN Code">
+        <button class="checkout-btn" onclick="showPayment()">Continue to Payment</button>
+    </div>
+</div>
+<div id="paymentModal" class="modal">
+    <div class="modal-box">
+        <button class="close" onclick="closePayment()">×</button>
+        <h2>Payment Method</h2>
+        <label class="payment-option">
+            <input type="radio" name="payment" value="cod" checked>
+            💵 Cash on Delivery
+        </label>
+        <label class="payment-option">
+            <input type="radio" name="payment" value="card">
+            💳 Credit / Debit Card
+        </label>
+        <div id="cardDetails" class="card-details">
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="MM/YY">
+            <input type="text" placeholder="CVV">
+        </div>
+        <button class="checkout-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+</div>
+<div id="successModal" class="modal">
+    <div class="modal-box success">
+        <div class="success-icon">✓</div>
+        <h2>Order Successful!</h2>
+        <p>Thank you for shopping with FurniSpace.</p>
+        <p>Your furniture will be delivered soon.</p>
+        <button class="checkout-btn" onclick="closeSuccess()">Continue Shopping</button>
+    </div>
+</div>
+<footer><p>© 2026 FurniSpace. All Rights Reserved.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
