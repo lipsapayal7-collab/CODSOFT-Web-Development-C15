@@ -1,15 +1,15 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif
 }
 html{
-scroll-behavior:smooth
+    scroll-behavior:smooth
 }
 body{
-background:#f5f7ff;
-color:#333
+    background:#f5f7ff;
+    color:#333
 }
 header{
     background:
@@ -53,20 +53,20 @@ nav ul li a:hover{
     color:#1e3a8a;
 }
 .cart-btn{
-border:0;
-background:white;
-color:#1e3a8a;
-padding:9px 14px;
-border-radius:6px;
-cursor:pointer;
-font-weight:600
+    border:0;
+    background:white;
+    color:#1e3a8a;
+    padding:9px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600
 }
-#cartCount{
-background:#f97316;
-color:white;
-padding:2px 6px;
-border-radius:50%;
-font-size:12px
+    #cartCount{
+    background:#f97316;
+    color:white;
+    padding:2px 6px;
+    border-radius:50%;
+    font-size:12px
 }
 .hero{
     width:86%;
@@ -118,78 +118,78 @@ font-size:12px
     background:#ea580c;
 }
 section{
-padding:55px 7%
+    padding:55px 7%
 }
 section h2{
-text-align:center;
-color:#1e3a8a;
-font-size:34px;
-margin-bottom:8px
+    text-align:center;
+    color:#1e3a8a;
+    font-size:34px;
+    margin-bottom:8px
 }
 .section-text{
-text-align:center;
-margin-bottom:20px
+    text-align:center;
+    margin-bottom:20px
 }
 .search-section{
-background:white;
-text-align:center
+    background:white;
+    text-align:center
 }
 .search-section p{
-margin-bottom:18px
+    margin-bottom:18px
 }
 .search-box{
-display:flex;
-max-width:650px;
-margin:auto
+    display:flex;
+    max-width:650px;
+    margin:auto
 }
 .search-box input{
-flex:1;
-padding:13px 16px;
-border:1px solid #ccc;
-border-radius:7px 0 0 7px;
-outline:none;
-font-size:15px
+    flex:1;
+    padding:13px 16px;
+    border:1px solid #ccc;
+    border-radius:7px 0 0 7px;
+    outline:none;
+    font-size:15px
 }
 .search-box button{
-border:0;
-background:#1e3a8a;
-color:white;
-padding:0 22px;
-border-radius:0 7px 7px 0;
-cursor:pointer
+    border:0;
+    background:#1e3a8a;
+    color:white;
+    padding:0 22px;
+    border-radius:0 7px 7px 0;
+    cursor:pointer
 }
 .category{
-display:flex;
-justify-content:center;
-gap:10px;
-margin:20px 0
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:20px 0
 }
 .category button{
-padding:8px 18px;
-border:1px solid #1e3a8a;
-background:white;
-color:#1e3a8a;
-border-radius:20px;
-cursor:pointer
+    padding:8px 18px;
+    border:1px solid #1e3a8a;
+    background:white;
+    color:#1e3a8a;
+    border-radius:20px;
+    cursor:pointer
 }
 .category button:hover{
-background:#1e3a8a;
-color:white
+    background:#1e3a8a;
+    color:white
 }
 .products{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px
 }
 .product{
-background:white;
-padding:15px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,.12);
-transition:.3s
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+    transition:.3s
 }
 .product:hover{
-transform:translateY(-5px)
+    transform:translateY(-5px)
 }
 .product img{
     width:100%;
@@ -200,179 +200,179 @@ transform:translateY(-5px)
     display:block;
 }
 .product h3{
-color:#1e3a8a;
-margin-top:10px
+    color:#1e3a8a;
+    margin-top:10px
 }
 .brand{
-color:#777;
-font-size:13px
+    color:#777;
+    font-size:13px
 }
 .price{
-font-size:19px;
-font-weight:700;
-margin:7px 0
+    font-size:19px;
+    font-weight:700;
+    margin:7px 0
 }
 .product button{
-border:0;
-padding:9px 12px;
-border-radius:6px;
-background:#1e3a8a;
-color:white;
-cursor:pointer;
-margin-right:4px
+    border:0;
+    padding:9px 12px;
+    border-radius:6px;
+    background:#1e3a8a;
+    color:white;
+    cursor:pointer;
+    margin-right:4px
 }
 .product .buy{
-background:#f97316
+    background:#f97316
 }
 .product button:hover{
-opacity:.85
+    opacity:.85
 }
 .about{
-background:#eef4ff
+    background:#eef4ff
 }
 .features{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px
 }
 .feature{
-background:white;
-padding:25px 15px;
-text-align:center;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,.1)
+    background:white;
+    padding:25px 15px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1)
 }
 .feature span{
-font-size:32px
+    font-size:32px
 }
 .feature h3{
-color:#1e3a8a;
-margin:8px 0
+    color:#1e3a8a;
+    margin:8px 0
 }
 .contact{
-text-align:center;
-background:white
+    text-align:center;
+    background:white
 }
 .contact p{
-margin:10px 0 20px
+    margin:10px 0 20px
 }
 .contact .btn{
-background:#1e3a8a;
-color:white
+    background:#1e3a8a;
+    color:white
 }
 footer{
-background:#1e3a8a;
-color:white;
-text-align:center;
-padding:18px
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:18px
 }
 .modal{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.65);
-z-index:2000;
-justify-content:center;
-align-items:center;
-padding:15px
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:2000;
+    justify-content:center;
+    align-items:center;
+    padding:15px
 }
 .modal-box{
-background:white;
-width:420px;
-max-width:100%;
-padding:25px;
-border-radius:14px;
-position:relative;
-max-height:90vh;
-overflow:auto
+    background:white;
+    width:420px;
+    max-width:100%;
+    padding:25px;
+    border-radius:14px;
+    position:relative;
+    max-height:90vh;
+    overflow:auto
 }
 .modal-box h2{
-color:#1e3a8a;
-margin-bottom:10px
+    color:#1e3a8a;
+    margin-bottom:10px
 }
 .modal-box input{
-width:100%;
-padding:11px;
-margin:6px 0;
-border:1px solid #ccc;
-border-radius:6px;
-outline:none
+    width:100%;
+    padding:11px;
+    margin:6px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none
 }
 .close{
-position:absolute;
-right:15px;
-top:10px;
-border:0;
-background:none;
-font-size:28px;
-cursor:pointer;
-color:#555
+    position:absolute;
+    right:15px;
+    top:10px;
+    border:0;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#555
 }
 .checkout-btn{
-width:100%;
-border:0;
-padding:12px;
-margin-top:12px;
-background:#1e3a8a;
-color:white;
-border-radius:6px;
-cursor:pointer;
-font-weight:600
+    width:100%;
+    border:0;
+    padding:12px;
+    margin-top:12px;
+    background:#1e3a8a;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600
 }
 .cart-item{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 0;
-border-bottom:1px solid #ddd
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+    border-bottom:1px solid #ddd
 }
 .cart-item button{
-border:0;
-background:#ef4444;
-color:white;
-padding:5px 8px;
-border-radius:4px;
-cursor:pointer
+    border:0;
+    background:#ef4444;
+    color:white;
+    padding:5px 8px;
+    border-radius:4px;
+    cursor:pointer
 }
 .payment-option{
-display:block;
-padding:12px;
-margin:8px 0;
-background:#f1f5f9;
-border-radius:7px;
-cursor:pointer
+    display:block;
+    padding:12px;
+    margin:8px 0;
+    background:#f1f5f9;
+    border-radius:7px;
+    cursor:pointer
 }
 .payment-option input{
-width:auto;
-margin-right:8px
+    width:auto;
+    margin-right:8px
 }
 .card-details{
-display:none
+    display:none
 }
 .success{
-text-align:center
+    text-align:center
 }
 .success-icon{
-width:60px;
-height:60px;
-margin:auto;
-border-radius:50%;
-background:#22c55e;
-color:white;
-font-size:40px;
-line-height:60px
+    width:60px;
+    height:60px;
+    margin:auto;
+    border-radius:50%;
+    background:#22c55e;
+    color:white;
+    font-size:40px;
+    line-height:60px
 }
 
 @media(max-width:900px){
-.products{
-grid-template-columns:repeat(2,1fr)
-}
-.features{
-grid-template-columns:repeat(2,1fr)
-}
-.hero-text h1{
-font-size:42px
-}
+    .products{
+        grid-template-columns:repeat(2,1fr)
+    }
+    .features{
+        grid-template-columns:repeat(2,1fr)
+    }
+    .hero-text h1{
+        font-size:42px
+    }
 }
 
 @media(max-width:650px){
